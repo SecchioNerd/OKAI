@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OK</title>
+
+    <link rel="stylesheet" href="style/style.css">
+</head>
+<body class="videoOk">
+    <header>
+        <div style="display: flex; align-items: center;gap:10px">
+            <img src="multimediale/favicon2.jpg" alt="Logo" style="width: 60px; border-radius: 50px;border:3px white solid;">
+            <h1>OK AI</h1>
+        </div>
+        <div style="display: flex;gap:10px">
+            <select name="Ai usata" id="aiUsata">
+                <option value=""><h2>OK AI</h2> V 1.0 Alpha</option>
+                <option value="">GPT-5</option>
+                <option value="">Gemini</option>
+                <option value="">Nutria AI</option>
+                <option value="">GPT-4</option>
+            </select>
+            <div class="hyperTextAccedi">
+                <a>Accedi</a>
+            </div>
+            <div class="hyperTextRegistrati">
+                <a>Registrati</a>
+            </div>
+        </div>
+        
+    </header>
+
+    <div class="inputTestuale">
+        <textarea placeholder="Scrivi la domanda della vita, da fare ad OK AI!!!" id="domanda"></textarea>
+        <button style="width: 60px;height: 60px;padding:0;border-radius: 50%;z-index: 2;"><img src="multimediale/frecciaInvio.webp" alt="Invia" style="width: 30px;height: 20px;margin:0;transform: rotate(90deg);"></button>
+    </div>
+
+    <div class="risposte" id="risposte">
+        <div class="risposta">
+            <div>
+                <div class="messaggio">
+                    <p>questo è un messaggio!!!</p>
+                </div>
+            </div>
+            <p>OK !!!</p>
+        </div>   
+    </div>
+
+    <script>
+        let numMessagio;
+
+        function nuovoMessagio(){
+            let domanda = document.getElementById("domanda").innerText;
+
+            document.getElementById("risposte").innerHTML+= '';
+        }
+    </script>
+</body>
+</html>

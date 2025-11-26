@@ -21,14 +21,25 @@ textarea{
 
 h1{
     font-family:Arial, Helvetica, sans-serif;
+}
+
+h2{
+    font-family:Arial, Helvetica, sans-serif;
     font-size: x-large;
 }
 
+hr{
+    size:2px;
+    width: 80%;
+}
+
 header{
+    position: fixed;
+    width: 100%;
     z-index: 2;
     background-color: rgb(50, 50, 50);
     align-items: center;
-    gap:70%;
+    gap:65%;
     display: flex;
     padding-left:20px;
     padding-top:5px;
@@ -69,6 +80,7 @@ select{
     position:absolute;
     display: flex;
     flex-direction: column;
+    gap:30px;
     top:20%;
     align-items: center;
     width: 100%;
@@ -77,6 +89,7 @@ select{
 }
 
 .risposta{
+    z-index: 2;
     display: flex;
     flex-direction: column;
     width: 55%;
@@ -90,6 +103,7 @@ select{
     padding-right: 10px;
     float: right;
     color: white;
+    font-family: Arial, Helvetica, sans-serif;
     border-radius: 30px;
 }
 
@@ -103,4 +117,42 @@ select{
     bottom:10%;
     right:0;
     gap:5px;
+}
+
+p{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.testoGenerato{
+    font-family: Arial, Helvetica, sans-serif;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: testoGenerato 8s linear forwards;
+}
+
+@keyframes testoGenerato{
+    0%{
+        width: 0;
+    }
+    50%{
+        width: 0;
+    }
+    100%{
+        width: 100%;
+    }
+}
+
+@keyframes pensa {
+    0%{
+        transform: rotate(0deg);
+        opacity:1;
+    }
+    99%{
+        opacity: 1;
+    }
+    100%{
+        transform: scale(1);
+        transform: rotate(900deg);
+        opacity:0;
+    }
 }

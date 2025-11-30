@@ -13,7 +13,7 @@
             <img src="multimediale/favicon2.jpg" alt="Logo" style="width: 60px; border-radius: 50px;border:3px white solid;">
             <h2>OK AI</h2>
         </div>
-        <div style="display: flex;gap:10px">
+        <div style=" position:fixed;display: flex;gap:10px;right:10px;">
             <select name="Ai usata" id="aiUsata">
                 <option value=""><h2>OK AI</h2> V 1.0 Alpha</option>
                 <option value="">GPT-5</option>
@@ -31,19 +31,17 @@
         
     </header>
 
-
-
-    <div class="inputTestuale">
-        <textarea placeholder="Scrivi la domanda della vita, da fare ad OK AI!!!" id="domanda"></textarea>
-        <button onclick="nuovoMessagio()" style="width: 60px;height: 60px;padding:0;border-radius: 50%;z-index: 2;"><img src="multimediale/frecciaInvio.webp" alt="Invia" style="width: 30px;height: 20px;margin:0;transform: rotate(90deg);"></button>
-    </div>
-
-    <div id="titoletto" style="width: 100%;position: absolute;justify-items: center;top:50%;">
+    <div id="titoletto" style="width: 100%;position: absolute;justify-items: center;top:50%;align-items: center;">
         <h1>Fai una domanda</h1>
     </div>
 
     <div class="risposte" id="risposte">
         
+    </div>
+
+    <div class="inputTestuale">
+        <textarea placeholder="Scrivi la domanda della vita, da fare ad OK AI!!!" id="domanda"></textarea>
+        <button onclick="nuovoMessagio()" style="width: 60px;height: 60px;padding:0;border-radius: 50%;z-index: 2;"><img src="multimediale/frecciaInvio.webp" alt="Invia" style="width: 30px;height: 20px;margin:0;transform: rotate(90deg);"></button>
     </div>
     
 
